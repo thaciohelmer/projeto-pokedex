@@ -13,8 +13,12 @@ const btnSearch = document
 
 const resultSearch = (pokemonName) =>
   fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-    .then((response) => {
-      return response.json();
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      document.getElementById("id").innerText = data["id"];
+      document.getElementById("infs").innerText = data["name"];
+      let img = data["sprites"]["other"]["official-artwork"]["front_default"];
+      document.getElementById("img-pokemon").setAttribute("src", img);
     })
-    .then((pokemon) => console.log(pokemon))
     .catch((error) => console.log(error));
