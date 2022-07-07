@@ -11,7 +11,7 @@ body {
 }
 
 .search-area {
-  margin: 10vh auto 0;
+  margin: 50px auto 0;
   justify-content: space-between;
   position: relative;
   background-color: #ffffff;
@@ -53,15 +53,28 @@ body {
   right: 5px;
 }
 
+.error-mensage {
+  height: 40px;
+  margin-top: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-mensage span {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
 /* CARTA */
 
 .base-card {
   background-color: #fff;
-  width: 80vw;
-  max-width: 350px;
-  height: 60vh;
-  max-height: 500px;
-  margin: 40px auto 0;
+  width: 300px;
+  height: 450px;
+  margin: 50px auto 0;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -70,7 +83,7 @@ body {
   position: relative;
 }
 
-.base-img {
+.main-content-card {
   padding: 10px;
   margin-top: 50px;
   display: flex;
@@ -80,18 +93,20 @@ body {
   align-items: center;
   border: 5px solid #dbdbdb;
   border-radius: 0px 8px 8px 8px;
+  position: relative;
 }
 
 #img-pokemon {
-  max-width: 90%;
+  max-width: 80%;
+  object-fit: cover;
 }
 
 .pokemon-name {
   display: flex;
   position: absolute;
   background-color: #dbdbdb;
-  top: 20px;
-  left: 18px;
+  top: -35px;
+  left: -5px;
   padding: 5px 10px;
   border-radius: 5px 5px 0px 0px;
   width: 130px;
