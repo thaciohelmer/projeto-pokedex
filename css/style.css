@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fc2f4a;
+}
+
+.search-area {
+  margin: 10vh auto 0;
+  justify-content: space-between;
+  position: relative;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 45px;
+  height: 50px;
+  align-items: center;
+  width: 70vw;
+  max-width: 300px;
+}
+
+#pokemonName {
+  font-size: 16px;
+  color: rgb(109, 109, 109);
+  margin-left: 10px;
+  height: 30px;
+  width: 80%;
+}
+
+#pokemonName::placeholder {
+  color: #ccc;
+}
+
+#pokemonName:focus {
+  border: 0 none;
+  outline: none;
+}
+
+.search-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #ccc;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* CARTA */
+
+.base-card {
+  background-color: #fff;
+  width: 80vw;
+  max-width: 350px;
+  height: 60vh;
+  max-height: 500px;
+  margin: 40px auto 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.base-img {
+  padding: 10px;
+  margin-top: 50px;
+  display: flex;
+  width: 90%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #dbdbdb;
+  border-radius: 0px 8px 8px 8px;
+}
+
+#img-pokemon {
+  max-width: 90%;
+}
+
+.pokemon-name {
+  display: flex;
+  position: absolute;
+  background-color: #dbdbdb;
+  top: 20px;
+  left: 18px;
+  padding: 5px 10px;
+  border-radius: 5px 5px 0px 0px;
+  width: 130px;
+  height: 35px;
+  justify-content: center;
+}
+
+.pokemon-name p {
+  text-align: center;
+  text-transform: capitalize;
+}

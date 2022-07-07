@@ -4,18 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- CSSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,600;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <title>Pokedex</title>
   </head>
   <body>
-    <div>
+    <div class="search-area">
       <input type="text" placeholder="Digite um pokemon" id="pokemonName" />
-      <button id="btn-search">Pesquisar</button>
+      <a href="#" class="search-btn" id="btn-search">
+        <img
+          src="/assets/img/search-interface-symbol.png"
+          alt=""
+          class="lupa-icon"
+        />
+      </a>
     </div>
-    <div>
-      <p id="id"></p>
-      <p id="infs"></p>
+    <div class="base-card">
+      <div class="pokemon-name">
+        <p id="infs"></p>
+        <p id="id"></p>
+      </div>
+      <div class="base-img">
+        <img src="" alt="" id="img-pokemon" />
+      </div>
     </div>
-    <div><img src="" alt="" id="img-pokemon" /></div>
     <script src="/js/script.js"></script>
   </body>
 </html>

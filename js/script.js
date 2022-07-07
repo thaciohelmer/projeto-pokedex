@@ -16,7 +16,7 @@ const resultSearch = (pokemonName) =>
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      document.getElementById("id").innerText = data["id"];
+      /* document.getElementById("id").innerText = data["id"]; */
       document.getElementById("infs").innerText = data["name"];
       let img = data["sprites"]["other"]["official-artwork"]["front_default"];
       document.getElementById("img-pokemon").setAttribute("src", img);
