@@ -22,7 +22,12 @@
   </head>
   <body>
     <div class="search-area">
-      <input type="text" placeholder="Digite um pokemon" id="pokemonName" />
+      <input
+        type="text"
+        placeholder="Digite um pokemon"
+        id="pokemonName"
+        value=""
+      />
       <a href="#" class="search-btn" id="btn-search">
         <img
           src="/assets/img/search-interface-symbol.png"
@@ -34,15 +39,7 @@
         <span id="alert-mensage"></span>
       </div>
     </div>
-    <div class="base-card">
-      <!-- <p id="id"></p> -->
-      <div class="main-content-card">
-        <div class="pokemon-name">
-          <p id="infs"></p>
-        </div>
-        <img src="" alt="" id="img-pokemon" />
-      </div>
-    </div>
+    <div id="card-gerate"></div>
     <script src="/js/script.js"></script>
   </body>
 </html>
